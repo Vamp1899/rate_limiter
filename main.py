@@ -27,13 +27,7 @@ def func(x,y):
   print(x+y)
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-  while True:
-    try:
-      t = threading.Thread(target = func, args=(3,5))
-      t.start()
-    except:
-      print("EXITED Program")
-      break
-
+  for _ in range(34):
+    func(3,5)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
